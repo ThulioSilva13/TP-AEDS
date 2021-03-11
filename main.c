@@ -28,5 +28,6 @@ int main(){
     removeCompromisso(agenda, 10);
     //imprimeAgenda(agenda);
     //recuperaAgenda(agenda, "22/05/2001");
+    /* oi*/
     return 0;
 }
