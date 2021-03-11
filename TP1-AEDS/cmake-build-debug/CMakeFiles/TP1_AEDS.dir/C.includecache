@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Agenda.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Agenda.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Agenda.h
+Compromisso.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.h
+
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Agenda.h
+Compromisso.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.h
+
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Compromisso.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.h
+
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.h
+
+C:/Users/Yuri/CLionProjects/TP1-AEDS/main.c
+stdio.h
+-
+stdlib.h
+-
+compromisso.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Compromisso.h
+agenda.h
+C:/Users/Yuri/CLionProjects/TP1-AEDS/Agenda.h
+
