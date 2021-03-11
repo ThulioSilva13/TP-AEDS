@@ -19,7 +19,7 @@ typedef struct{
 
 void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano);
 void recuperaAgenda(Agenda *agenda, char data[11]);
-void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], char duracao[4], char descricao[100]);
+void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], int duracao, char descricao[100]);
 void removeCompromisso(Agenda *agenda, int IDc);
 void imprimeAgenda(Agenda *agenda);
 void retornaNCompromissos(Agenda*agenda);

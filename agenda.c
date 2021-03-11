@@ -15,7 +15,7 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->idCompromissoAutoIncrement = 0;
 }
 //          [                ]
-void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], char duracao[4], char descricao[100]){
+void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], int duracao, char descricao[100]){
     CelulaAgenda *posAdicionar = agenda->cabeca;
     while(posAdicionar->prox != NULL){
         if(prioridade > posAdicionar->prox->compromisso->prioridade)
@@ -64,9 +64,6 @@ void removeCompromisso(Agenda *agenda, int IDc){
             }else{
                 antes = aux;
             }
-            //[         [1->][2->][3->][4->]         ]
-            //antes 1 3
-            //aux 2
         }
     }
 }

@@ -3,7 +3,7 @@
 #include <string.h>
 #include "compromisso.h"
 
-void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,char data[11],char hora[6],char duracao[4],char descricao[100]){
+void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,char data[11],char hora[6],int duracao,char descricao[100]){
     comp->idCompromisso = idCompromisso;
     comp->prioridade = prioridade;
     strcpy(comp->data, data);
@@ -29,7 +29,24 @@ void imprimeCompromisso(Compromisso *comp){
     printf("\t\tDescricao = %s \n",&comp->descricao);*/
 }
 
-int temConflito(){
-    //if(comp1->data == comp2->data){
-    //  if(hora[0]
+int temConflito(Compromisso *comp1, Compromisso *comp2){
+    int dezenaHora1 = atoi(comp1->hora[0]);
+    int unidadeHora1= atoi(comp1->hora[1]);
+    int dezenaMinuto1= atoi(comp1->hora[3]);
+    int unidadeMinuto1= atoi(comp1->hora[4]);
+    int dezenaHora2= atoi(comp2->hora[0]);
+    int unidadeHora2= atoi(comp2->hora[1]);
+    int dezenaMinuto2= atoi(comp2->hora[3]);
+    int unidadeMinuto2= atoi(comp2->hora[4]);
+    int inicio;
+    int fim;
+    
+    if (!strcmp(comp1->data,comp2->data)){
+        if (dezenaHora1==){
+
+        }
+    }
+    else{
+        printf("não há conflito");
+    }
 }
