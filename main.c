@@ -3,6 +3,7 @@
 
 #include "compromisso.h"
 #include "agenda.h"
+#include "instituicao.h"
 
 int main(){
     /*
@@ -10,7 +11,7 @@ int main(){
     inicializaCompromisso(compromisso, 2, "22/02/2001", "12:21", "120", "Batata"  );
     imprimeCompromisso(compromisso);
     */
-
+    Instituicao *instituicao = (Instituicao*) malloc(sizeof(Instituicao));
     Agenda *agenda = (Agenda*) malloc(sizeof(Agenda));
     criaAgenda(agenda, 1, "Agenda 01", 2020);
     for(int i = 0; i<10; i++) {
@@ -25,8 +26,10 @@ int main(){
         else if(i % 5 == 4)
             insereCompromisso(agenda, 1, "22/06/2001", "12:21", "120", "Batata");
     }
-    removeCompromisso(agenda, 10);
+    //removeCompromisso(agenda, 10);
     //imprimeAgenda(agenda);
     //recuperaAgenda(agenda, "22/05/2001");
+    inicializaInstituicao(instituicao, "das", "dsada", "dasda");
+    imprimeInstituicao(instituicao);
     return 0;
 }
