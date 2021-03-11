@@ -13,6 +13,7 @@ void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,
 }
 void alteraprioridade(Compromisso *comp, int novaPri) {
     comp->prioridade = novaPri;
+    printf("Alterado com Sucesso!!!");
 }
 
 int retornaprioridade(Compromisso *comp){
@@ -22,8 +23,8 @@ void imprimeCompromisso(Compromisso *comp){
     printf("\tImprime Compromisso\n");
     printf("\t\tidCompromisso =  %d \n",comp->idCompromisso);
     printf("\t\tprioridade = %d \n",comp->prioridade);
-    /*printf("\t\tdata = %s \n",&comp->data);
-    printf("\t\thora = %s \n",&comp->hora);
+    printf("\t\tdata = %s \n",&comp->data);
+    /*printf("\t\thora = %s \n",&comp->hora);
     printf("\t\tDuracao = %s \n",&comp->duracao);
     printf("\t\tDescricao = %s \n",&comp->descricao);*/
 }

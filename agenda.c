@@ -3,7 +3,7 @@
 #include <string.h>
 #include "agenda.h"
 #include "compromisso.h"
-
+//
 void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->cabeca = (CelulaAgenda*)malloc(sizeof(CelulaAgenda));
     agenda->ultimo = agenda->cabeca;
@@ -14,7 +14,7 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->qtd = 0;
     agenda->idCompromissoAutoIncrement = 0;
 }
-
+//          [                ]
 void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], char duracao[4], char descricao[100]){
     CelulaAgenda *posAdicionar = agenda->cabeca;
     while(posAdicionar->prox != NULL){
@@ -31,7 +31,7 @@ void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[
     posAdicionar->prox = novo;
     agenda->qtd++;
 }
-
+//[[][][][][]         ]
 void imprimeAgenda(Agenda *agenda){
     printf("\n\nImprime agenda\n");
     printf("Qtd: %d\n", agenda->qtd);
@@ -42,4 +42,41 @@ void imprimeAgenda(Agenda *agenda){
         printf("Compromisso %d \n",i++);
         imprimeCompromisso(aux->compromisso);
     }
+}
+void retornaNCompromissos(Agenda *agenda){
+    printf("A quantidade de compromissos é: ");
+    printf("%d",agenda->qtd);
+}
+void removeCompromisso(Agenda *agenda, int IDc){
+    if (!IDc){
+        printf("Lista está vazia");
+    }
+    else{
+        CelulaAgenda *aux = agenda->cabeca;
+        CelulaAgenda *antes = agenda->cabeca;
+        while (aux->prox != NULL){
+           aux = aux->prox;
+            if (aux->compromisso->idCompromisso == IDc){
+                antes->prox = aux->prox;
+                free(aux);
+                agenda->qtd--;
+                break;
+            }else{
+                antes = aux;
+            }
+            //[         [1->][2->][3->][4->]         ]
+            //antes 1 3
+            //aux 2
+        }
+    }
+}
+
+void recuperaAgenda(Agenda *agenda, char data[11]){
+     CelulaAgenda *aux = agenda->cabeca;
+     while (aux->prox != NULL){
+         aux = aux->prox;
+         if (!strcmp(aux->compromisso->data, data)){
+             imprimeCompromisso(aux->compromisso);
+         }
+     }
 }
