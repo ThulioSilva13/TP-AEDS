@@ -29,7 +29,11 @@ int main(){
     //removeCompromisso(agenda, 10);
     //imprimeAgenda(agenda);
     //recuperaAgenda(agenda, "22/05/2001");
+
     inicializaInstituicao(instituicao, "das", "dsada", "dasda");
     imprimeInstituicao(instituicao);
+
+    /* oi*/
+
     return 0;
 }
