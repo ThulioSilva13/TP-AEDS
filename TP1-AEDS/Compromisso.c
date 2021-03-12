@@ -3,7 +3,7 @@
 #include <string.h>
 #include "Compromisso.h"
 
-void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,char data[11],char hora[6],char duracao[4],char descricao[100]){
+void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,int ano, int mes, int dia,,hora, minuto,int duracao,char descricao[100]){
     comp->idCompromisso = idCompromisso;
     comp->prioridade = prioridade;
     strcpy(comp->data, data);

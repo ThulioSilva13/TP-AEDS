@@ -7,7 +7,7 @@ typedef struct CelulaAgenda{
     struct CelulaAgenda* prox;
 }CelulaAgenda;
 
-typedef struct{
+typedef struct Agenda{
     CelulaAgenda *cabeca;
     CelulaAgenda *ultimo;
     int idProfessor;
@@ -18,8 +18,8 @@ typedef struct{
 }Agenda;
 
 void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano);
-void recuperaAgenda(Agenda *agenda, char data[11]);
-void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], int duracao, char descricao[100]);
+void recuperaAgenda(Agenda *agenda, int dia, int mes, int ano);
+void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]);
 void removeCompromisso(Agenda *agenda, int IDc);
 void imprimeAgenda(Agenda *agenda);
 void retornaNCompromissos(Agenda*agenda);

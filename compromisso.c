@@ -3,12 +3,15 @@
 #include <string.h>
 #include "compromisso.h"
 
-void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,char data[11],char hora[6],int duracao,char descricao[100]){
+void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
     comp->idCompromisso = idCompromisso;
     comp->prioridade = prioridade;
-    strcpy(comp->data, data);
-    strcpy(comp->hora, hora);
-    strcpy(comp->duracao, duracao);
+    comp->dia = dia;
+    comp->mes = mes;
+    comp->ano = ano;
+    comp->hora = hora;
+    comp->minuto = minuto;
+    comp->duracao = duracao;
     strcpy(comp->descricao, descricao);
 }
 void alteraprioridade(Compromisso *comp, int novaPri) {
@@ -23,30 +26,27 @@ void imprimeCompromisso(Compromisso *comp){
     printf("\tImprime Compromisso\n");
     printf("\t\tidCompromisso =  %d \n",comp->idCompromisso);
     printf("\t\tprioridade = %d \n",comp->prioridade);
-    printf("\t\tdata = %s \n",&comp->data);
-    /*printf("\t\thora = %s \n",&comp->hora);
-    printf("\t\tDuracao = %s \n",&comp->duracao);
-    printf("\t\tDescricao = %s \n",&comp->descricao);*/
+    printf("\t\tdata = %d/%d/%d \n",comp->dia,comp->mes,comp->ano);
+    printf("\t\thora = %d:%d \n",comp->hora,comp->minuto);
+    printf("\t\tDuracao = %d \n",comp->duracao);
+    printf("\t\tDescricao = %s \n",&comp->descricao);
 }
 
-int temConflito(Compromisso *comp1, Compromisso *comp2){
-    int dezenaHora1 = atoi(comp1->hora[0]);
-    int unidadeHora1= atoi(comp1->hora[1]);
-    int dezenaMinuto1= atoi(comp1->hora[3]);
-    int unidadeMinuto1= atoi(comp1->hora[4]);
-    int dezenaHora2= atoi(comp2->hora[0]);
-    int unidadeHora2= atoi(comp2->hora[1]);
-    int dezenaMinuto2= atoi(comp2->hora[3]);
-    int unidadeMinuto2= atoi(comp2->hora[4]);
-    int inicio;
-    int fim;
-    
-    if (!strcmp(comp1->data,comp2->data)){
-        if (dezenaHora1==){
+void temConflito(Compromisso *comp1, Compromisso *comp2){
+    int inicio1 = comp1->hora*60 + comp1->minuto;
+    int inicio2 = comp2->hora*60 + comp2->minuto;
+    int fim1 = inicio1 + comp1->duracao;
+    int fim2 = inicio2 + comp2->duracao;
+    if (comp1->dia == comp2->dia && comp1->mes == comp2->mes && comp1->ano == comp2->ano){
+        if((inicio1 < inicio2 && inicio2 < fim1) || (inicio2 < inicio1 && inicio1 <fim2) || inicio1==inicio2){
+            printf("\nha conflito\n");
+        } else{
 
+            printf("\nnao ha conflito\n");
         }
     }
     else{
-        printf("não há conflito");
+
+        printf("\nnao ha conflito\n");
     }
 }

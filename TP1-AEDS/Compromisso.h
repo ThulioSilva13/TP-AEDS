@@ -4,13 +4,13 @@
 typedef struct{
     int idCompromisso;
     char data [11];
-    char duracao [4];
+    int duracao;
     char descricao [100];
-    char hora[6];
+    hora, minuto;
     int prioridade;
 }Compromisso;
 
-void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade, char data[11], char hora[6], char duracao[4], char descricao[100]);
+void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade, int ano, int mes, int dia,, hora, minuto, int duracao, char descricao[100]);
 void alteraprioridade(Compromisso *comp, int novaPri);
 int retornaprioridade(Compromisso *comp);
 int temConflito(Compromisso *comp1, Compromisso *comp2);

@@ -15,7 +15,7 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->idCompromissoAutoIncrement = 0;
 }
 //          [                ]
-void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[6], int duracao, char descricao[100]){
+void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
     CelulaAgenda *posAdicionar = agenda->cabeca;
     while(posAdicionar->prox != NULL){
         if(prioridade > posAdicionar->prox->compromisso->prioridade)
@@ -24,14 +24,14 @@ void insereCompromisso(Agenda* agenda, int prioridade, char data[11], char hora[
             break;
     }
     Compromisso *comp = (Compromisso*)malloc(sizeof(Compromisso));
-    inicializaCompromisso(comp, ++agenda->idCompromissoAutoIncrement, prioridade, data, hora, duracao, descricao);
+    inicializaCompromisso(comp, ++agenda->idCompromissoAutoIncrement, prioridade, dia, mes, ano, hora, minuto, duracao, descricao);
     CelulaAgenda *novo = (CelulaAgenda*) malloc(sizeof(CelulaAgenda));
     novo->compromisso = comp;
     novo->prox = posAdicionar->prox;
     posAdicionar->prox = novo;
     agenda->qtd++;
 }
-//[[][][][][]         ]
+
 void imprimeAgenda(Agenda *agenda){
     printf("\n\nImprime agenda\n");
     printf("Qtd: %d\n", agenda->qtd);
@@ -43,10 +43,12 @@ void imprimeAgenda(Agenda *agenda){
         imprimeCompromisso(aux->compromisso);
     }
 }
+
 void retornaNCompromissos(Agenda *agenda){
     printf("A quantidade de compromissos é: ");
     printf("%d",agenda->qtd);
 }
+
 void removeCompromisso(Agenda *agenda, int IDc){
     if (!IDc){
         printf("Lista está vazia");
@@ -68,11 +70,11 @@ void removeCompromisso(Agenda *agenda, int IDc){
     }
 }
 
-void recuperaAgenda(Agenda *agenda, char data[11]){
+void recuperaAgenda(Agenda *agenda, int dia, int mes, int ano){
      CelulaAgenda *aux = agenda->cabeca;
      while (aux->prox != NULL){
          aux = aux->prox;
-         if (!strcmp(aux->compromisso->data, data)){
+         if (aux->compromisso->dia == dia && aux->compromisso->mes == mes && aux->compromisso->ano == ano){
              imprimeCompromisso(aux->compromisso);
          }
      }
