@@ -16,4 +16,5 @@ typedef struct ListaDeAgenda{
 void insereAgenda(ListaDeAgenda *listaDeAgenda, Agenda *agenda);
 void imprimeListaDeAgenda(ListaDeAgenda *listaDeAgenda);
 void criaListaDeAgenda(ListaDeAgenda *listaDeAgenda);
+CelulaListaDeAgendas verificaProfessor(ListaDeAgenda *listaDeAgenda, int idProfessor);
 #endif //TP01_LISTADEAGENDAS_H

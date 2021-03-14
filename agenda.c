@@ -74,10 +74,20 @@ void removeCompromisso(Agenda *agenda, int IDc){
 
 void recuperaAgenda(Agenda *agenda, int dia, int mes, int ano){
      CelulaAgenda *aux = agenda->cabeca;
+     int quantidadeApos;
      while (aux->prox != NULL){
          aux = aux->prox;
-         if (aux->compromisso->dia == dia && aux->compromisso->mes == mes && aux->compromisso->ano == ano){
-             imprimeCompromisso(aux->compromisso);
+         if (ano > aux->compromisso->ano){
+             quantidadeApos++;
+         }
+         else if(mes > aux->compromisso->mes){
+             quantidadeApos++;
+         }
+         else if(dia > aux->compromisso->dia) {
+             quantidadeApos++;
          }
      }
+    printf("%s", agenda->nomeProfessor);
+    printf("%d", agenda->ano);
+    printf("%d", quantidadeApos);
 }

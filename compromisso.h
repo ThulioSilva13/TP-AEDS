@@ -15,7 +15,7 @@ typedef struct Compromisso{
 }Compromisso;
 
 void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]);
-void alteraprioridade(Compromisso *comp, int novaPri);
+int alteraprioridade(Compromisso *comp, int novaPri);
 int retornaprioridade(Compromisso *comp);
 void temConflito(Compromisso *comp1, Compromisso *comp2);
 void imprimeCompromisso(Compromisso *comp);

@@ -32,3 +32,12 @@ void criaListaDeAgenda(ListaDeAgenda *listaDeAgenda){
     listaDeAgenda->ultimo = listaDeAgenda->cabeca;
     listaDeAgenda->cabeca->prox = NULL;
 }
+CelulaListaDeAgendas VerificaProfessor(ListaDeAgenda *listaDeAgenda, int idProfessor){
+    CelulaListaDeAgendas *aux = listaDeAgenda->cabeca;
+    while (aux->prox != NULL){
+        aux = aux->prox;
+        if(aux->agenda->idProfessor == idProfessor){
+            return *aux;
+        }
+    }
+}

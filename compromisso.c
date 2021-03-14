@@ -14,7 +14,7 @@ void inicializaCompromisso(Compromisso *comp, int idCompromisso, int prioridade,
     comp->duracao = duracao;
     strcpy(comp->descricao, descricao);
 }
-void alteraprioridade(Compromisso *comp, int novaPri) {
+int alteraprioridade(Compromisso *comp,  int novaPri) {
     comp->prioridade = novaPri;
     printf("Alterado com Sucesso!!!");
 }
