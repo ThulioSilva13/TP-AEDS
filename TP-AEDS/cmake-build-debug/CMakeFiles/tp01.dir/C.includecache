@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documentos/GitHub/TP-AEDS/agenda.h
+compromisso.h
+D:/Documentos/GitHub/TP-AEDS/compromisso.h
+
+D:/Documentos/GitHub/TP-AEDS/compromisso.h
+
+D:/Documentos/GitHub/TP-AEDS/instituicao.h
+
+D:/Documentos/GitHub/TP-AEDS/listaDeAgendas.h
+agenda.h
+D:/Documentos/GitHub/TP-AEDS/agenda.h
+
+D:/Documentos/GitHub/TP-AEDS/main.c
+stdio.h
+-
+stdlib.h
+-
+compromisso.h
+D:/Documentos/GitHub/TP-AEDS/compromisso.h
+agenda.h
+D:/Documentos/GitHub/TP-AEDS/agenda.h
+instituicao.h
+D:/Documentos/GitHub/TP-AEDS/instituicao.h
+listaDeAgendas.h
+D:/Documentos/GitHub/TP-AEDS/listaDeAgendas.h
+
