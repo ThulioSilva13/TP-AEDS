@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "agenda.h"
+#include "listaDeAgendas.h"
 #include "compromisso.h"
 //
 void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
@@ -14,12 +15,11 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->qtd = 0;
     agenda->idCompromissoAutoIncrement = 0;
 }
-//          [                ]
 void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
     CelulaAgenda *posAdicionar = agenda->cabeca;
     while(posAdicionar->prox != NULL){
         if(prioridade > posAdicionar->prox->compromisso->prioridade)
-          posAdicionar = posAdicionar->prox;
+            posAdicionar = posAdicionar->prox;
         else
             break;
     }
@@ -30,6 +30,8 @@ void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano
     novo->prox = posAdicionar->prox;
     posAdicionar->prox = novo;
     agenda->qtd++;
+
+    //temConflito(comp, novo);
 }
 
 void imprimeAgenda(Agenda *agenda){
