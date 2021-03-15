@@ -16,13 +16,20 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     agenda->idCompromissoAutoIncrement = 0;
 }
 void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
+    printf("entrou na funcao");
     CelulaAgenda *posAdicionar = agenda->cabeca;
-    while(posAdicionar->prox != NULL){
-        if(prioridade > posAdicionar->prox->compromisso->prioridade)
+
+    printf("chegou aqui");
+    do {
+        printf("entrou no while");
+        if(prioridade > posAdicionar->prox->compromisso->prioridade) {
+            printf("entrou no if");
             posAdicionar = posAdicionar->prox;
-        else
+        }
+        else {
             break;
-    }
+        }
+    } while(posAdicionar->prox != NULL);
     Compromisso *comp = (Compromisso*)malloc(sizeof(Compromisso));
     inicializaCompromisso(comp, ++agenda->idCompromissoAutoIncrement, prioridade, dia, mes, ano, hora, minuto, duracao, descricao);
     CelulaAgenda *novo = (CelulaAgenda*) malloc(sizeof(CelulaAgenda));
@@ -47,7 +54,7 @@ void imprimeAgenda(Agenda *agenda){
 }
 
 void retornaNCompromissos(Agenda *agenda){
-    printf("A quantidade de compromissos é: ");
+    printf("A quantidade de compromissos eh: ");
     printf("%d",agenda->qtd);
 }
 

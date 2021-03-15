@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Documentos/GitHub/TP-AEDS/agenda.c" "D:/Documentos/GitHub/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/agenda.c.obj"
-  "D:/Documentos/GitHub/TP-AEDS/compromisso.c" "D:/Documentos/GitHub/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/compromisso.c.obj"
-  "D:/Documentos/GitHub/TP-AEDS/instituicao.c" "D:/Documentos/GitHub/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/instituicao.c.obj"
-  "D:/Documentos/GitHub/TP-AEDS/listaDeAgendas.c" "D:/Documentos/GitHub/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/listaDeAgendas.c.obj"
-  "D:/Documentos/GitHub/TP-AEDS/main.c" "D:/Documentos/GitHub/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/main.c.obj"
+  "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.c" "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/agenda.c.obj"
+  "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.c" "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/compromisso.c.obj"
+  "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/instituicao.c" "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/instituicao.c.obj"
+  "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/listaDeAgendas.c" "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/listaDeAgendas.c.obj"
+  "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/main.c" "C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -54,19 +54,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\GitHub\TP-AEDS
+CMAKE_SOURCE_DIR = C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\GitHub\TP-AEDS\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/tp01.dir/clean
 CMakeFiles/tp01.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tp01.dir\build.make CMakeFiles/tp01.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tp01.dir\build.make CMakeFiles/tp01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tp01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tp01"
 .PHONY : CMakeFiles/tp01.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tp01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tp01.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/tp01.dir/rule
 
 # Convenience name for target.

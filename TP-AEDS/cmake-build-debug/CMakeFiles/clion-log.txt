@@ -1,4 +1,4 @@
-"D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Documentos\GitHub\TP-AEDS
+"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Documentos/GitHub/TP-AEDS/cmake-build-debug
+-- Build files have been written to: C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug

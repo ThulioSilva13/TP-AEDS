@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\GitHub\TP-AEDS
+CMAKE_SOURCE_DIR = C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\GitHub\TP-AEDS\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tp01.dir/depend.make
@@ -78,68 +78,68 @@ include CMakeFiles/tp01.dir/flags.make
 
 CMakeFiles/tp01.dir/main.c.obj: CMakeFiles/tp01.dir/flags.make
 CMakeFiles/tp01.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tp01.dir/main.c.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\main.c.obj   -c D:\Documentos\GitHub\TP-AEDS\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tp01.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\main.c.obj   -c C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\main.c
 
 CMakeFiles/tp01.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp01.dir/main.c.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\GitHub\TP-AEDS\main.c > CMakeFiles\tp01.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\main.c > CMakeFiles\tp01.dir\main.c.i
 
 CMakeFiles/tp01.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp01.dir/main.c.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\GitHub\TP-AEDS\main.c -o CMakeFiles\tp01.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\main.c -o CMakeFiles\tp01.dir\main.c.s
 
 CMakeFiles/tp01.dir/agenda.c.obj: CMakeFiles/tp01.dir/flags.make
 CMakeFiles/tp01.dir/agenda.c.obj: ../agenda.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tp01.dir/agenda.c.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\agenda.c.obj   -c D:\Documentos\GitHub\TP-AEDS\agenda.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tp01.dir/agenda.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\agenda.c.obj   -c C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\agenda.c
 
 CMakeFiles/tp01.dir/agenda.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp01.dir/agenda.c.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\GitHub\TP-AEDS\agenda.c > CMakeFiles\tp01.dir\agenda.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\agenda.c > CMakeFiles\tp01.dir\agenda.c.i
 
 CMakeFiles/tp01.dir/agenda.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp01.dir/agenda.c.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\GitHub\TP-AEDS\agenda.c -o CMakeFiles\tp01.dir\agenda.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\agenda.c -o CMakeFiles\tp01.dir\agenda.c.s
 
 CMakeFiles/tp01.dir/compromisso.c.obj: CMakeFiles/tp01.dir/flags.make
 CMakeFiles/tp01.dir/compromisso.c.obj: ../compromisso.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tp01.dir/compromisso.c.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\compromisso.c.obj   -c D:\Documentos\GitHub\TP-AEDS\compromisso.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tp01.dir/compromisso.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\compromisso.c.obj   -c C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\compromisso.c
 
 CMakeFiles/tp01.dir/compromisso.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp01.dir/compromisso.c.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\GitHub\TP-AEDS\compromisso.c > CMakeFiles\tp01.dir\compromisso.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\compromisso.c > CMakeFiles\tp01.dir\compromisso.c.i
 
 CMakeFiles/tp01.dir/compromisso.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp01.dir/compromisso.c.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\GitHub\TP-AEDS\compromisso.c -o CMakeFiles\tp01.dir\compromisso.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\compromisso.c -o CMakeFiles\tp01.dir\compromisso.c.s
 
 CMakeFiles/tp01.dir/instituicao.c.obj: CMakeFiles/tp01.dir/flags.make
 CMakeFiles/tp01.dir/instituicao.c.obj: ../instituicao.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tp01.dir/instituicao.c.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\instituicao.c.obj   -c D:\Documentos\GitHub\TP-AEDS\instituicao.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tp01.dir/instituicao.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\instituicao.c.obj   -c C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\instituicao.c
 
 CMakeFiles/tp01.dir/instituicao.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp01.dir/instituicao.c.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\GitHub\TP-AEDS\instituicao.c > CMakeFiles\tp01.dir\instituicao.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\instituicao.c > CMakeFiles\tp01.dir\instituicao.c.i
 
 CMakeFiles/tp01.dir/instituicao.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp01.dir/instituicao.c.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\GitHub\TP-AEDS\instituicao.c -o CMakeFiles\tp01.dir\instituicao.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\instituicao.c -o CMakeFiles\tp01.dir\instituicao.c.s
 
 CMakeFiles/tp01.dir/listaDeAgendas.c.obj: CMakeFiles/tp01.dir/flags.make
 CMakeFiles/tp01.dir/listaDeAgendas.c.obj: ../listaDeAgendas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tp01.dir/listaDeAgendas.c.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\listaDeAgendas.c.obj   -c D:\Documentos\GitHub\TP-AEDS\listaDeAgendas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tp01.dir/listaDeAgendas.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tp01.dir\listaDeAgendas.c.obj   -c C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\listaDeAgendas.c
 
 CMakeFiles/tp01.dir/listaDeAgendas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tp01.dir/listaDeAgendas.c.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\GitHub\TP-AEDS\listaDeAgendas.c > CMakeFiles\tp01.dir\listaDeAgendas.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\listaDeAgendas.c > CMakeFiles\tp01.dir\listaDeAgendas.c.i
 
 CMakeFiles/tp01.dir/listaDeAgendas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tp01.dir/listaDeAgendas.c.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\GitHub\TP-AEDS\listaDeAgendas.c -o CMakeFiles\tp01.dir\listaDeAgendas.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\listaDeAgendas.c -o CMakeFiles\tp01.dir\listaDeAgendas.c.s
 
 # Object files for target tp01
 tp01_OBJECTS = \
@@ -161,7 +161,7 @@ tp01.exe: CMakeFiles/tp01.dir/build.make
 tp01.exe: CMakeFiles/tp01.dir/linklibs.rsp
 tp01.exe: CMakeFiles/tp01.dir/objects1.rsp
 tp01.exe: CMakeFiles/tp01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable tp01.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable tp01.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tp01.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -174,6 +174,6 @@ CMakeFiles/tp01.dir/clean:
 .PHONY : CMakeFiles/tp01.dir/clean
 
 CMakeFiles/tp01.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Documentos\GitHub\TP-AEDS D:\Documentos\GitHub\TP-AEDS D:\Documentos\GitHub\TP-AEDS\cmake-build-debug D:\Documentos\GitHub\TP-AEDS\cmake-build-debug D:\Documentos\GitHub\TP-AEDS\cmake-build-debug\CMakeFiles\tp01.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug C:\Users\acrro\OneDrive\Documentos\GitHub\TP-AEDS\TP-AEDS\TP-AEDS\TP-AEDS\cmake-build-debug\CMakeFiles\tp01.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tp01.dir/depend
 
