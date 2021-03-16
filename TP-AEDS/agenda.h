@@ -14,12 +14,11 @@ typedef struct Agenda{
     char nomeProfessor[20];
     int ano;
     int qtd;
-    int idCompromissoAutoIncrement;
 }Agenda;
 
 void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano);
 void recuperaAgenda(Agenda *agenda, int dia, int mes, int ano);
-void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]);
+void insereCompromisso(Agenda* agenda, int idCompromisso, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]);
 void removeCompromisso(Agenda *agenda, int IDc);
 void imprimeAgenda(Agenda *agenda);
 void retornaNCompromissos(Agenda*agenda);

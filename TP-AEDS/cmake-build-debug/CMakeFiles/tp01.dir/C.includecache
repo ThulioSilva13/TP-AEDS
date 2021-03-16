@@ -6,27 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.c
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.h
+compromisso.h
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
+
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
+
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/instituicao.h
+
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/listaDeAgendas.h
+agenda.h
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.h
+
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/main.c
 stdio.h
 -
 stdlib.h
 -
-string.h
--
+compromisso.h
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
 agenda.h
 C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.h
+instituicao.h
+C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/instituicao.h
 listaDeAgendas.h
 C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/listaDeAgendas.h
-compromisso.h
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
-
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.h
-compromisso.h
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
-
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/compromisso.h
-
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/listaDeAgendas.h
-agenda.h
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/agenda.h
 

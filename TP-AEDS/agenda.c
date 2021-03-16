@@ -13,30 +13,34 @@ void criaAgenda(Agenda *agenda, int ID, char nome[20], int ano){
     strcpy(agenda->nomeProfessor, nome);
     agenda->ano = ano;
     agenda->qtd = 0;
-    agenda->idCompromissoAutoIncrement = 0;
 }
-void insereCompromisso(Agenda* agenda, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
-    printf("entrou na funcao");
+void insereCompromisso(Agenda* agenda, int idCompromisso, int prioridade, int dia, int mes, int ano, int hora, int minuto, int duracao, char descricao[100]){
+    printf("Quantidade no inciio do insere = %d\n", agenda->qtd);
     CelulaAgenda *posAdicionar = agenda->cabeca;
 
-    printf("chegou aqui");
-    do {
-        printf("entrou no while");
+    while(posAdicionar->prox != NULL) {
         if(prioridade > posAdicionar->prox->compromisso->prioridade) {
-            printf("entrou no if");
             posAdicionar = posAdicionar->prox;
         }
         else {
             break;
         }
-    } while(posAdicionar->prox != NULL);
+    }
+    printf("Quantidade antes de alocar = %d\n", agenda->qtd);
     Compromisso *comp = (Compromisso*)malloc(sizeof(Compromisso));
-    inicializaCompromisso(comp, ++agenda->idCompromissoAutoIncrement, prioridade, dia, mes, ano, hora, minuto, duracao, descricao);
+    printf("Quantidade antes de INICIALIZAR = %d\n", agenda->qtd);
+    inicializaCompromisso(comp, idCompromisso, prioridade, dia, mes, ano, hora, minuto, duracao, descricao);
+    printf("Quantidade antes de criar uma celula nova = %d\n", agenda->qtd);
     CelulaAgenda *novo = (CelulaAgenda*) malloc(sizeof(CelulaAgenda));
+    printf("Quantidade antes de compromisso receber comp = %d\n", agenda->qtd);
     novo->compromisso = comp;
+    printf("Quantidade antes de posAdicionar -> prox = %d\n", agenda->qtd);
     novo->prox = posAdicionar->prox;
+    printf("Quantidade antes de prox novo = %d\n", agenda->qtd);
     posAdicionar->prox = novo;
+    printf("Quantidade antes do final = %d\n", agenda->qtd);
     agenda->qtd++;
+    printf("Quantidade no final = %d\n", agenda->qtd);
 
     //temConflito(comp, novo);
 }

@@ -11,7 +11,7 @@ void inicializaInstituicao(Instituicao *instituicao, char nome[20], char especia
 
 void imprimeInstituicao(Instituicao *instituicao) {
     printf("\tImprime Instituicao\n");
-    printf("\t\tnome =  %s \n", instituicao->nome);
-    printf("\t\tespecialidade =  %s \n", instituicao->especialidade);
-    printf("\t\ttipo =  %s \n", instituicao->tipoInstituicao);
+    printf("\t\tNome =  %s \n", instituicao->nome);
+    printf("\t\tEspecialidade =  %s \n", instituicao->especialidade);
+    printf("\t\tTipo =  %s \n", instituicao->tipoInstituicao);
 }
