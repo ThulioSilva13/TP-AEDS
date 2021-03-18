@@ -1,3 +1,0 @@
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/tp01.dir
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/acrro/OneDrive/Documentos/GitHub/TP-AEDS/TP-AEDS/TP-AEDS/TP-AEDS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
